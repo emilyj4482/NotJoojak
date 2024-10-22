@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NotJoojak" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="NotJoojak" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="1049.2537313432836" y="-27.459954233409608"/>
         </scene>
-        <!--View Controller-->
+        <!--Member Detail View Controller-->
         <scene sceneID="ZPG-9e-R3D">
             <objects>
-                <viewController id="jEn-rP-J1P" sceneMemberID="viewController">
+                <viewController id="jEn-rP-J1P" customClass="MemberDetailViewController" customModule="NotJoojak" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="am3-bY-frA">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="2027" y="356"/>
         </scene>
-        <!--View Controller-->
+        <!--Team Detail View Controller-->
         <scene sceneID="rol-2Y-3XB">
             <objects>
-                <viewController id="pdd-xJ-02Q" sceneMemberID="viewController">
+                <viewController id="pdd-xJ-02Q" customClass="TeamDetailViewController" customModule="NotJoojak" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vrq-xS-Dtv">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="864"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
