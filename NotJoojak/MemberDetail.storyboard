@@ -204,8 +204,9 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="XZ8-Hi-MFa" secondAttribute="bottom" constant="592.66666666666674" id="1ql-Ju-pH8"/>
                             <constraint firstItem="XZ8-Hi-MFa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3Fc-dP-D7k"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="XZ8-Hi-MFa" secondAttribute="top" constant="61.999999999999986" id="c09-l1-HNV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="XZ8-Hi-MFa" secondAttribute="top" constant="62" id="c09-l1-HNV"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XZ8-Hi-MFa" secondAttribute="trailing" id="h8y-B5-i1E"/>
                         </constraints>
                     </view>
