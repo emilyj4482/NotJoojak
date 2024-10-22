@@ -33,8 +33,8 @@ class MemberDetailViewController: UIViewController {
             name.text = member.name
             MBTI.text = member.MBTI.rawValue
             age.text = String(member.age)
-            hobby.text = member.hobby.first ?? "Nothing"
-            interests.text = member.interests.first ?? "Nothing"
+            hobby.text = member.hobby
+            interests.text = member.interests
             workingStyle.text = member.workingStyle
             devExperience.text = member.devExperience
             myStrength.text = member.myStrength

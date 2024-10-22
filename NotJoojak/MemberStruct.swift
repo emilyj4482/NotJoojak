@@ -33,8 +33,8 @@ struct Member {
     let name: String // 이름
     let age: Int // 나이
     let MBTI: MBTI // MBTI
-    let hobby: [String] // 취미
-    let interests: [String] // 관심사
+    let hobby: String // 취미
+    let interests: String // 관심사
     let workingStyle: String // 일하는 스타일
     let devExperience: String // 개발경력, 정보 : (전공/비전공, 업무유무)
     let myStrength: String // 장점
