@@ -26,6 +26,6 @@ class TeamDetailViewController: UIViewController {
     }
     */
     
-    // 메롱
+    // second commit test
 
 }
