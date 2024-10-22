@@ -16,6 +16,4 @@ class TalkViewController: UIViewController {
     }
     
 
-  // plese...
-
 }
