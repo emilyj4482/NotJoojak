@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
                           workingStyle: "일하는 스타일", devExperience: "개발경력", myStrength: "나의 장점",
                           blogURL: "블로그 주소", githubURL: "깃헙 주소")
     
-    let HyeonWook = Member(profilePicture: "profile_yeonWook", backgroundPicture: "background_yeonWook",
+    let HyeonWook = Member(profilePicture: "profile_HyeonWook", backgroundPicture: "background_HyeonWook",
                            name: "서현욱", age: 25, MBTI: .ENTP, hobby: ["취미"], interests: ["관심사"],
                            workingStyle: "일하는 스타일", devExperience: "개발경력", myStrength: "나의 장점",
                            blogURL: "블로그 주소", githubURL: "깃헙 주소")
