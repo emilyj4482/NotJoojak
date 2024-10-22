@@ -50,29 +50,33 @@
                                     <action selector="closeButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IbN-Me-CrM"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VU6-re-lud">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pt3-LT-DA3">
                                 <rect key="frame" x="0.0" y="55" width="393" height="787"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="VU6-re-lud" secondAttribute="bottom" id="6NW-eh-Ulh"/>
-                            <constraint firstItem="VU6-re-lud" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8KW-OO-Krh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pt3-LT-DA3" secondAttribute="trailing" id="HDU-BS-HSn"/>
+                            <constraint firstItem="pt3-LT-DA3" firstAttribute="top" secondItem="K4I-L5-thO" secondAttribute="bottom" constant="10" id="Wf0-Qd-6yR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="K4I-L5-thO" secondAttribute="trailing" constant="10" id="ZF9-GQ-ZTN"/>
-                            <constraint firstItem="VU6-re-lud" firstAttribute="top" secondItem="K4I-L5-thO" secondAttribute="bottom" constant="10" id="drK-Md-JGm"/>
+                            <constraint firstItem="pt3-LT-DA3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aYX-hd-ySf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="pt3-LT-DA3" secondAttribute="bottom" id="eHc-5e-ZXP"/>
                             <constraint firstItem="K4I-L5-thO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="pEV-RD-O2R"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VU6-re-lud" secondAttribute="trailing" id="zJK-5V-Idw"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundView" destination="VU6-re-lud" id="bQM-77-qXE"/>
+                        <outlet property="webView" destination="pt3-LT-DA3" id="YJs-OP-HGm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="187" y="-35"/>
+            <point key="canvasLocation" x="227" y="60"/>
         </scene>
     </scenes>
     <resources>
