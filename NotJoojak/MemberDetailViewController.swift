@@ -25,11 +25,11 @@ class MemberDetailViewController: UIViewController {
         //미니프로필 사진
         miniprofile.layer.cornerRadius = miniprofile.frame.height / 2
         
-        miniprofile.layer.borderWidth = 5
+        miniprofile.layer.borderWidth = 8
         miniprofile.layer.borderColor = UIColor.black.cgColor
         //프로필 박스
         firstBox.layer.cornerRadius = firstBox.frame.height / 2
-        secondBox.layer.cornerRadius = 30
+        secondBox.layer.cornerRadius = 20
         lastBox.layer.cornerRadius = lastBox.frame.height / 2
         //블로그 박스
         blogBox.layer.cornerRadius = blogBox.frame.height / 2
