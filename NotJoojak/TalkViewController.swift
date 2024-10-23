@@ -115,15 +115,14 @@ class TalkViewController: UIViewController {
     
     // 프로필 사진 선택하는 제스처
     @IBAction func tappedImageView(_ sender: UITapGestureRecognizer) {
-        print(#function, sender.view?.tag)
         performSegue(withIdentifier: firstSegue, sender: nil)
     }
     
-   
+   /*
     @IBAction func tappedLabel(_ sender: UITapGestureRecognizer) {
-        print("chattingbox press")
         performSegue(withIdentifier: "teamIntroduceSegue", sender: nil)
     }
+    */
     
     // 전송버튼 누를 시 채팅 출력
     @IBAction func tappedSendButton(_ sender: UIButton) {
@@ -132,8 +131,5 @@ class TalkViewController: UIViewController {
             count += 1
         }
     }
-    
-    
-    
 }
 
