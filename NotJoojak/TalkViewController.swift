@@ -9,13 +9,13 @@ import UIKit
 
 class TalkViewController: UIViewController {
     
-    // stackView
-    @IBOutlet weak var firstStackView: UIStackView!
-    @IBOutlet weak var secondStackView: UIStackView!
-    @IBOutlet weak var thirdStackView: UIStackView!
-    @IBOutlet weak var fourthStackView: UIStackView!
-    @IBOutlet weak var fifthStackView: UIStackView!
-    @IBOutlet weak var sixthStackView: UIStackView!
+    @IBOutlet weak var firstView: UIView!
+    @IBOutlet weak var secondView: UIView!
+    @IBOutlet weak var thirdView: UIView!
+    @IBOutlet weak var fourthView: UIView!
+    @IBOutlet weak var fifthView: UIView!
+    @IBOutlet weak var sixthView: UIView!
+    @IBOutlet weak var chatView: UIView!
     
     // imageView
     @IBOutlet weak var firstImageView: UIImageView!
@@ -41,11 +41,12 @@ class TalkViewController: UIViewController {
     @IBOutlet weak var chattingBox: UIView!
     
     var viewOrder : [UIView] = []
-    var nameOrder : [UIView] = []
     let index : Int = 0
     var count : Int = 0
     var nameIndex : Int = 0
-    var namedirection : String = "left"
+    
+    
+    let firstSegue : String = "firstSegue"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,59 +57,36 @@ class TalkViewController: UIViewController {
         setProfilePicture()
     }
     
-    func setting() {
-        firstStackView.isHidden = true
-        secondStackView.isHidden = true
-        thirdStackView.isHidden = true
-        fourthStackView.isHidden = true
-        fifthStackView.isHidden = true
-        sixthStackView.isHidden = true
-        firstAsk.isHidden = true
-        secondAsk.isHidden = true
-        thirdAsk.isHidden = true
-        firstNameLabel.isHidden = true
-        secondNameLabel.isHidden = true
-        thirdNameLabel.isHidden = true
-        fourthNameLabel.isHidden = true
-        fifthNameLabel.isHidden = true
-        sixthNameLabel.isHidden = true
-        lastChatLabel.isHidden = true
-        
-        
+    func setting () {
+        // 배열 할당
+        viewOrder = [firstAsk, firstView, secondAsk, secondView, thirdView, thirdAsk, fourthView, fifthView, sixthView, chatView]
+        viewOrder.forEach { $0.isHidden = true }
+      
         chattingBox.clipsToBounds = true
         chattingBox.layer.cornerRadius = 20
         chattingBox.backgroundColor = .clear
         chattingBox.layer.borderWidth = 1
         chattingBox.layer.borderColor = UIColor.white.cgColor
         
-        
-        // 배열 선언
-        viewOrder = [firstAsk, firstStackView, secondAsk, secondStackView, thirdStackView, thirdAsk, fourthStackView, fifthStackView, sixthStackView]
-        nameOrder = [firstNameLabel, secondNameLabel, thirdNameLabel, fourthNameLabel, fifthNameLabel, sixthNameLabel, lastChatLabel]
     }
     
     // 뷰를 출력하는 함수
     func showChat(index : Int){
         let index = count
         if index == 0 || index == 2 || index == 5 {
-            namedirection = "right"
             viewOrder[index].isHidden = false
         }else if index == 9 {
-            namedirection = "left"
-            showName(direction: namedirection)
-            nameOrder[nameIndex].isHidden = false
+            viewOrder[index].isHidden = false
         } else {
-            namedirection = "left"
-            showName(direction: namedirection)
-            nameIndex += 1
             viewOrder[index].isHidden = false
         }
     }
     
-    // 이름을 출력하는 함수
-    func showName(direction: String) {
-        if direction == "left" {
-            nameOrder[nameIndex].isHidden = false
+    // 전송버튼 누를 시 채팅 출력
+    @IBAction func tappedSendButton(_ sender: UIButton) {
+        if count < viewOrder.count {
+            showChat(index: count)
+            count += 1
         }
     }
     
@@ -181,12 +159,18 @@ class TalkViewController: UIViewController {
     }
     */
     
-    // 전송버튼 누를 시 채팅 출력
-    @IBAction func tappedSendButton(_ sender: UIButton) {
-        if count <= viewOrder.count {
-            showChat(index: count)
-            count += 1
-        }
-    }
+   
+//    // 프로필 화면 전환
+//    @IBAction func tappedImageView(_ sender: UITapGestureRecognizer) {
+//        print(#function, sender.view?.tag)
+//        performSegue(withIdentifier: firstSegue, sender: nil)
+//    }
+//
+//   // 팀소개 화면 전환
+//    @IBAction func tappedLabel(_ sender: UITapGestureRecognizer) {
+//        print("chattingbox press")
+//        performSegue(withIdentifier: "teamIntroduceSegue", sender: nil)
+//    }
+//
 }
 
