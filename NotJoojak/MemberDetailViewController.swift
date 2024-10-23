@@ -10,9 +10,7 @@ import UIKit
 class MemberDetailViewController: UIViewController {
 
     var member: Member?
-    
-    @IBOutlet weak var profilePicture: UILabel!
-    @IBOutlet weak var backgroundPicture: UILabel!
+
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var age: UILabel!
     @IBOutlet weak var MBTI: UILabel!
@@ -27,8 +25,8 @@ class MemberDetailViewController: UIViewController {
     @IBOutlet weak var tmi: UILabel!
 
     
-    @IBOutlet weak var background: UIImageView!
-    @IBOutlet weak var miniprofile: UIImageView!
+    @IBOutlet weak var backgroundPicture: UIImageView!
+    @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var firstBox: UIView!
     @IBOutlet weak var secondBox: UIView!
     @IBOutlet weak var lastBox: UIView!
@@ -39,6 +37,10 @@ class MemberDetailViewController: UIViewController {
         super.viewDidLoad()
         
         if let member = member {
+            
+            profilePicture.image = UIImage(named: member.profilePicture)
+            backgroundPicture.image = UIImage(named: member.backgroundPicture)
+            
             name.text = member.name
             age.text = String(member.age) + "세"
             MBTI.text = member.MBTI.rawValue
@@ -59,10 +61,10 @@ class MemberDetailViewController: UIViewController {
             print("No data received")
         }
         //미니프로필 사진
-        miniprofile.layer.cornerRadius = miniprofile.frame.height / 2
+        profilePicture.layer.cornerRadius = profilePicture.frame.height / 2
         
-        miniprofile.layer.borderWidth = 8
-        miniprofile.layer.borderColor = UIColor.black.cgColor
+        profilePicture.layer.borderWidth = 8
+        profilePicture.layer.borderColor = UIColor.black.cgColor
         
         //프로필 박스
         firstBox.layer.cornerRadius = firstBox.frame.height / 2
@@ -75,5 +77,4 @@ class MemberDetailViewController: UIViewController {
         githubIcon.layer.cornerRadius = githubIcon.frame.height / 2
         
     }
-
 }
