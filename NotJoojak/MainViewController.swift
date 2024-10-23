@@ -43,6 +43,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
     
     @IBOutlet weak var HaMinProfile: UIButton!
     @IBOutlet weak var JiHyeProfile: UIButton!
