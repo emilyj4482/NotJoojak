@@ -12,7 +12,7 @@
         <!--Message-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="NotJoojak" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="NotJoojak" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -319,10 +319,10 @@
             </objects>
             <point key="canvasLocation" x="970" y="-27"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main-->
         <scene sceneID="31f-bs-otA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TOb-RV-Nef" sceneMemberID="viewController">
+                <navigationController title="Main" automaticallyAdjustsScrollViewInsets="NO" id="TOb-RV-Nef" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w9Q-5a-OWu">
                         <rect key="frame" x="0.0" y="62" width="402" height="44"/>
@@ -335,7 +335,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vs0-GP-dVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129.85074626865671" y="-27.459954233409608"/>
+            <point key="canvasLocation" x="124" y="-27"/>
         </scene>
         <!--불사조 단톡방-->
         <scene sceneID="2Tx-S0-w61">
