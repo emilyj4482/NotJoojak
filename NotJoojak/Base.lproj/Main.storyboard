@@ -1470,9 +1470,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="NdC-Bx-scA"/>
                     <connections>
-                        <outlet property="Background" destination="2BS-Mp-gaq" id="ouV-IY-RoL"/>
                         <outlet property="MBTI" destination="SvT-y2-i26" id="aZE-2D-4ne"/>
                         <outlet property="age" destination="R8a-5B-e91" id="18Z-lx-xPX"/>
+                        <outlet property="backgroundPicture" destination="2BS-Mp-gaq" id="4Oy-yP-zHQ"/>
                         <outlet property="blogIcon" destination="Uu2-fJ-IRL" id="fLF-zh-GLE"/>
                         <outlet property="devExperience" destination="zWK-B1-l8y" id="hcx-s2-Z6e"/>
                         <outlet property="favoriteFood" destination="GOL-wl-BAo" id="s3A-Wh-Iml"/>
@@ -1481,9 +1481,10 @@
                         <outlet property="hobby" destination="dOj-Nv-QKm" id="g6S-8x-dEs"/>
                         <outlet property="interests" destination="48g-L2-zcu" id="qN3-xZ-bVF"/>
                         <outlet property="lastBox" destination="FSJ-Am-glU" id="uYj-as-KJE"/>
-                        <outlet property="miniprofile" destination="UhS-nG-bzl" id="fVh-tJ-FoY"/>
+                        <outlet property="location" destination="cQE-Ga-lkt" id="dj1-Xi-JEL"/>
                         <outlet property="myStrength" destination="g1O-rB-GJr" id="1Kn-ow-Lee"/>
                         <outlet property="name" destination="GZK-wh-BOJ" id="c9O-NU-7C0"/>
+                        <outlet property="profilePicture" destination="UhS-nG-bzl" id="onc-Lc-JiA"/>
                         <outlet property="secondBox" destination="Qrb-9D-BFp" id="zZ3-n9-WQu"/>
                         <outlet property="tmi" destination="stt-8j-ut5" id="S07-6m-Jp4"/>
                         <outlet property="workingStyle" destination="mtb-wc-wFE" id="c1h-Vk-SmL"/>
