@@ -23,7 +23,7 @@ class MemberDetailViewController: UIViewController {
     @IBOutlet weak var githubURL: UILabel!
     @IBOutlet weak var favoriteFood: UILabel!
     @IBOutlet weak var tmi: UILabel!
-
+    @IBOutlet weak var location: UILabel!
     
     @IBOutlet weak var backgroundPicture: UIImageView!
     @IBOutlet weak var profilePicture: UIImageView!
@@ -50,6 +50,7 @@ class MemberDetailViewController: UIViewController {
             myStrength.text = member.myStrength
             favoriteFood.text = member.favoriteFood
             tmi.text = member.tmi
+            location.text = member.location
             
             if member.blogURL.contains("tistory") {
                 blogIcon.setImage(UIImage(named: "icon_tistory"), for: .normal)

@@ -1472,6 +1472,7 @@
                         <outlet property="hobby" destination="dOj-Nv-QKm" id="g6S-8x-dEs"/>
                         <outlet property="interests" destination="48g-L2-zcu" id="qN3-xZ-bVF"/>
                         <outlet property="lastBox" destination="FSJ-Am-glU" id="uYj-as-KJE"/>
+                        <outlet property="location" destination="cQE-Ga-lkt" id="dj1-Xi-JEL"/>
                         <outlet property="myStrength" destination="g1O-rB-GJr" id="1Kn-ow-Lee"/>
                         <outlet property="name" destination="GZK-wh-BOJ" id="c9O-NU-7C0"/>
                         <outlet property="profilePicture" destination="UhS-nG-bzl" id="onc-Lc-JiA"/>
