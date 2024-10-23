@@ -10,7 +10,7 @@ import UIKit
 class MemberDetailViewController: UIViewController {
 
     var member: Member?
-/*
+    
     @IBOutlet weak var profilePicture: UILabel!
     @IBOutlet weak var backgroundPicture: UILabel!
     @IBOutlet weak var name: UILabel!
@@ -23,28 +23,8 @@ class MemberDetailViewController: UIViewController {
     @IBOutlet weak var myStrength: UILabel!
     @IBOutlet weak var blogURL: UILabel!
     @IBOutlet weak var githubURL: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet weak var favoriteFood: UILabel!
 
-        if let member = member {
-            profilePicture.text = member.profilePicture
-            backgroundPicture.text = member.backgroundPicture
-            name.text = member.name
-            MBTI.text = member.MBTI.rawValue
-            age.text = String(member.age)
-            hobby.text = member.hobby
-            interests.text = member.interests
-            workingStyle.text = member.workingStyle
-            devExperience.text = member.devExperience
-            myStrength.text = member.myStrength
-            blogURL.text = member.blogURL
-            githubURL.text = member.githubURL
-        } else {
-            print("No data received")
-        }
-    }
-*/
     
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var miniprofile: UIImageView!
@@ -58,7 +38,19 @@ class MemberDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        if let member = member {
+            name.text = member.name
+            age.text = String(member.age) + "세"
+            MBTI.text = member.MBTI.rawValue
+            hobby.text = member.hobby
+            interests.text = member.interests
+            workingStyle.text = member.workingStyle
+            myStrength.text = member.myStrength
+            favoriteFood.text = "아직 안넣음"
+            
+        } else {
+            print("No data received")
+        }
         //미니프로필 사진
         miniprofile.layer.cornerRadius = miniprofile.frame.height / 2
         
