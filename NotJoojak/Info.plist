@@ -17,6 +17,7 @@
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Talk</string>
+					<string>WebPage</string>
 				</dict>
 			</array>
 		</dict>
