@@ -8,6 +8,7 @@
 import UIKit
 
 class TalkViewController: UIViewController {
+    // 커밋
     
     // stackView
     @IBOutlet weak var firstStackView: UIStackView!
