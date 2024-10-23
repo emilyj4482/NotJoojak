@@ -23,4 +23,5 @@ class TeamDetailViewController: UIViewController {
         secondLabelBox.backgroundColor = UIColor.darkGray.withAlphaComponent(0.8)
         thirdLabelBox.backgroundColor = UIColor.darkGray.withAlphaComponent(0.8)
     }
+
 }
