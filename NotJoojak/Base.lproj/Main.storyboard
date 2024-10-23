@@ -31,6 +31,9 @@
                                         <integer key="value" value="45"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HK2-xk-jor"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="743-dU-sWb">
                                 <rect key="frame" x="41" y="127" width="85" height="89"/>
@@ -45,6 +48,9 @@
                                         <integer key="value" value="45"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWK-3s-gIO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6Y-No-EG1">
                                 <rect key="frame" x="277" y="127" width="85" height="89"/>
@@ -59,6 +65,9 @@
                                         <integer key="value" value="45"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4uG-bS-JcZ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="서현욱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSi-eG-ob3">
                                 <rect key="frame" x="55" y="224" width="56" height="28"/>
@@ -115,6 +124,9 @@
                                         <integer key="value" value="45"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="glV-cO-aBF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfn-4X-zNr">
                                 <rect key="frame" x="157" y="260" width="85" height="89"/>
@@ -129,6 +141,9 @@
                                         <integer key="value" value="45"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zwb-T0-aft"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhn-MN-MJp">
                                 <rect key="frame" x="276" y="260" width="85" height="89"/>
@@ -143,6 +158,9 @@
                                         <integer key="value" value="45"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pyv-eE-3i4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="김손겸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqq-kl-nVp">
                                 <rect key="frame" x="293" y="357" width="56" height="28"/>
@@ -315,6 +333,14 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Message" id="43p-k4-IWf" propertyAccessControl="none"/>
+                    <connections>
+                        <outlet property="HaMinProfile" destination="YKd-5O-5mg" id="qEq-gR-5N1"/>
+                        <outlet property="HyeonWookProfile" destination="743-dU-sWb" id="jrr-SP-WLJ"/>
+                        <outlet property="JaeHoonProfile" destination="P3R-wR-X6U" id="XWu-pt-9id"/>
+                        <outlet property="JiHyeProfile" destination="wfn-4X-zNr" id="kPD-D7-x8a"/>
+                        <outlet property="MinSeongProfile" destination="S6Y-No-EG1" id="hDO-o1-wsg"/>
+                        <outlet property="SonGyeomProfile" destination="dhn-MN-MJp" id="a2j-Us-ycw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -323,7 +349,7 @@
         <!--Main-->
         <scene sceneID="31f-bs-otA">
             <objects>
-                <navigationController title="Main" automaticallyAdjustsScrollViewInsets="NO" id="TOb-RV-Nef" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Main" title="Main" automaticallyAdjustsScrollViewInsets="NO" id="TOb-RV-Nef" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w9Q-5a-OWu">
                         <rect key="frame" x="0.0" y="62" width="402" height="44"/>
@@ -1163,7 +1189,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7r1-vf-xbb">
-                                <rect key="frame" x="35" y="329" width="332" height="50"/>
+                                <rect key="frame" x="35" y="373" width="332" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZK-wh-BOJ">
                                         <rect key="frame" x="25" y="10" width="65" height="30"/>
@@ -1205,7 +1231,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSJ-Am-glU">
-                                <rect key="frame" x="35" y="689" width="332" height="56"/>
+                                <rect key="frame" x="35" y="733" width="332" height="56"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="R92-hw-bBh">
                                         <rect key="frame" x="24.999999999999993" y="19" width="102.33333333333331" height="18"/>
@@ -1238,7 +1264,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qrb-9D-BFp">
-                                <rect key="frame" x="35" y="394" width="332" height="280"/>
+                                <rect key="frame" x="35" y="438" width="332" height="280"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="ENy-Gj-E2q">
                                         <rect key="frame" x="25" y="30" width="157.33333333333334" height="220"/>
@@ -1375,7 +1401,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UhS-nG-bzl">
-                                <rect key="frame" x="35" y="183.66666666666666" width="125" height="121.66666666666671"/>
+                                <rect key="frame" x="35" y="227.66666666666666" width="125" height="121.66666666666671"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <constraints>
@@ -1385,7 +1411,7 @@
                                 <imageReference key="image" image="person.fill" catalog="system" symbolScale="medium"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BqJ-2O-j9V">
-                                <rect key="frame" x="280" y="271" width="87" height="36"/>
+                                <rect key="frame" x="280" y="315" width="87" height="36"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="30" verticalHuggingPriority="30" horizontalCompressionResistancePriority="30" verticalCompressionResistancePriority="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Oj-ey-cd1">
                                         <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
@@ -1456,7 +1482,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dI5-72-tks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1360" y="687"/>
+            <point key="canvasLocation" x="2279.1044776119402" y="686.49885583524019"/>
         </scene>
         <!--Web Page View Controller-->
         <scene sceneID="lVV-4w-75t">
@@ -1500,7 +1526,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qeA-s7-e9j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="686"/>
+            <point key="canvasLocation" x="3034.3283582089553" y="685.81235697940497"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fYl-4J-gS5">
+            <objects>
+                <navigationController storyboardIdentifier="MemberDetail" automaticallyAdjustsScrollViewInsets="NO" id="8aW-ut-oXD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tJz-hW-aPJ">
+                        <rect key="frame" x="0.0" y="62" width="402" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="F0S-bJ-3iY" kind="relationship" relationship="rootViewController" id="AVB-kL-R4Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcJ-Nq-f2o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1359.7014925373132" y="686.49885583524019"/>
         </scene>
     </scenes>
     <resources>
@@ -1517,7 +1561,7 @@
         <image name="hyunwook photo" width="960" height="600"/>
         <image name="icon_github" width="230" height="225"/>
         <image name="jaehoon photo" width="288" height="288"/>
-        <image name="jihye photo" width="421" height="443"/>
+        <image name="jihye photo" width="1170" height="1170"/>
         <image name="joojaktalk" width="1170" height="2530"/>
         <image name="minseoung photo" width="1080" height="1440"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>

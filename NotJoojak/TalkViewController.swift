@@ -47,17 +47,16 @@ class TalkViewController: UIViewController {
     var nameIndex : Int = 0
     var namedirection : String = "left"
     
-    
-    let firstSegue : String = "firstSegue"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 초기 세팅 호출
         setting()
+        setName()
+        setProfilePicture()
     }
     
-    func setting () {
+    func setting() {
         firstStackView.isHidden = true
         secondStackView.isHidden = true
         thirdStackView.isHidden = true
@@ -113,9 +112,67 @@ class TalkViewController: UIViewController {
         }
     }
     
+    func setName() {
+        firstNameLabel.text = Member.HaMin.name
+        secondNameLabel.text = Member.HyeonWook.name
+        thirdNameLabel.text = Member.JiHye.name
+        fourthNameLabel.text = Member.JaeHoon.name
+        fifthNameLabel.text = Member.MinSeong.name
+        sixthNameLabel.text = Member.SonGyeom.name
+    }
+    
+    func setProfilePicture() {
+        firstImageView.image = UIImage(named: Member.HaMin.profilePicture)
+        firstImageView.layer.cornerRadius = firstImageView.frame.height / 2
+        firstImageView.clipsToBounds = true
+
+        secondImageView.image = UIImage(named: Member.HyeonWook.profilePicture)
+        secondImageView.layer.cornerRadius = secondImageView.frame.height / 2
+        secondImageView.clipsToBounds = true
+        
+        thirdImageView.image = UIImage(named: Member.JiHye.profilePicture)
+        thirdImageView.layer.cornerRadius = thirdImageView.frame.height / 2
+        thirdImageView.clipsToBounds = true
+        
+        fourthImageView.image = UIImage(named: Member.JaeHoon.profilePicture)
+        fourthImageView.layer.cornerRadius = fourthImageView.frame.height / 2
+        fourthImageView.clipsToBounds = true
+        
+        fifthImageView.image = UIImage(named: Member.MinSeong.profilePicture)
+        fifthImageView.layer.cornerRadius = fifthImageView.frame.height / 2
+        fifthImageView.clipsToBounds = true
+        
+        sixthImageView.image = UIImage(named: Member.SonGyeom.profilePicture)
+        sixthImageView.layer.cornerRadius = sixthImageView.frame.height / 2
+        sixthImageView.clipsToBounds = true
+    }
+    
+    
+    
     // 프로필 사진 선택하는 제스처
     @IBAction func tappedImageView(_ sender: UITapGestureRecognizer) {
-        performSegue(withIdentifier: firstSegue, sender: nil)
+        var memberToSend: Member? = nil
+        
+        if let tappedImageView = sender.view as? UIImageView {
+            switch tappedImageView {
+            case firstImageView: memberToSend = Member.HaMin
+            case secondImageView: memberToSend = Member.HyeonWook
+            case thirdImageView: memberToSend = Member.JiHye
+            case fourthImageView: memberToSend = Member.JaeHoon
+            case fifthImageView: memberToSend = Member.MinSeong
+            case sixthImageView: memberToSend = Member.SonGyeom
+            default: memberToSend = nil
+            }
+
+        }
+        let MemberDetailStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if let nextVC = MemberDetailStoryBoard.instantiateViewController(withIdentifier: "MemberDetailViewController") as? MemberDetailViewController {
+            
+            nextVC.member = memberToSend
+            
+            self.navigationController?.pushViewController(nextVC, animated: true)
+        }
     }
     
    /*
