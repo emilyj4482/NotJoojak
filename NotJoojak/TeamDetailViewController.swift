@@ -8,24 +8,20 @@
 import UIKit
 
 class TeamDetailViewController: UIViewController {
-
+    
+    @IBOutlet var firstLabelBox: UIView!
+    @IBOutlet var secondLabelBox: UIView!
+    @IBOutlet var thirdLabelBox: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setBoxColor()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setBoxColor() {
+        firstLabelBox.backgroundColor = UIColor.darkGray.withAlphaComponent(0.8)
+        secondLabelBox.backgroundColor = UIColor.darkGray.withAlphaComponent(0.8)
+        thirdLabelBox.backgroundColor = UIColor.darkGray.withAlphaComponent(0.8)
     }
-    */
-    
-    // 메롱
 
 }
