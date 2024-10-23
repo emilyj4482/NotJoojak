@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -249,21 +250,31 @@
                                 <imageReference key="image" image="person.fill" catalog="system" symbolScale="medium"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="CGN-Fm-GNl">
-                                <rect key="frame" x="279.33333333333331" y="316.66666666666669" width="87.666666666666686" height="34.333333333333314"/>
+                                <rect key="frame" x="281" y="315" width="86" height="36"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F95-0R-Yrb">
-                                        <rect key="frame" x="0.0" y="0.0" width="36.333333333333336" height="34.333333333333336"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="G"/>
+                                    <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="30" verticalHuggingPriority="30" horizontalCompressionResistancePriority="30" verticalCompressionResistancePriority="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F95-0R-Yrb">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                        <color key="backgroundColor" name="backgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="L73-KW-v8A"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="36" id="PGM-12-WAz"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="36" id="Zit-Ck-0o8"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="G" image="icon_GitHub"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fU-TQ-I3e">
-                                        <rect key="frame" x="51.333333333333371" y="0.0" width="36.333333333333343" height="34.333333333333336"/>
+                                        <rect key="frame" x="51" y="0.0" width="35" height="36"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="B"/>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="F95-0R-Yrb" firstAttribute="centerY" secondItem="CGN-Fm-GNl" secondAttribute="centerY" id="maF-SL-fTd"/>
+                                    <constraint firstItem="F95-0R-Yrb" firstAttribute="centerX" secondItem="CGN-Fm-GNl" secondAttribute="centerX" id="uvq-3Z-3Ul"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -292,11 +303,11 @@
                         <outlet property="Background" destination="XZ8-Hi-MFa" id="cTw-19-ZLc"/>
                         <outlet property="MBTI" destination="5jL-1F-Dcm" id="HpO-3B-Qhp"/>
                         <outlet property="age" destination="NNG-5k-sX7" id="z72-pF-7HK"/>
-                        <outlet property="blogBox" destination="0fU-TQ-I3e" id="8XP-dC-eyD"/>
+                        <outlet property="blogIcon" destination="0fU-TQ-I3e" id="bqZ-5C-DID"/>
                         <outlet property="devExperience" destination="NQz-wj-aPk" id="6Tk-rs-mrM"/>
                         <outlet property="favoriteFood" destination="pIo-93-UFg" id="fm5-aC-kq1"/>
                         <outlet property="firstBox" destination="eUh-h4-3EL" id="3nI-vg-bhj"/>
-                        <outlet property="gitBox" destination="F95-0R-Yrb" id="S2o-vO-0rr"/>
+                        <outlet property="githubIcon" destination="F95-0R-Yrb" id="Rb9-u1-zCB"/>
                         <outlet property="hobby" destination="lxe-Fm-Ym4" id="fEJ-dp-nwf"/>
                         <outlet property="interests" destination="LSM-Nf-U1Q" id="dST-aN-oPz"/>
                         <outlet property="lastBox" destination="cbT-CW-H5q" id="zsn-rV-0xm"/>
@@ -332,7 +343,11 @@
     </scenes>
     <resources>
         <image name="flame" catalog="system" width="106" height="128"/>
+        <image name="icon_GitHub" width="230" height="225"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <namedColor name="backgroundColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

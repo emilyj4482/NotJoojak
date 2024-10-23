@@ -31,8 +31,8 @@ class MemberDetailViewController: UIViewController {
     @IBOutlet weak var firstBox: UIView!
     @IBOutlet weak var secondBox: UIView!
     @IBOutlet weak var lastBox: UIView!
-    @IBOutlet weak var blogBox: UIButton!
-    @IBOutlet weak var gitBox: UIButton!
+    @IBOutlet weak var blogIcon: UIButton!
+    @IBOutlet weak var githubIcon: UIButton!
     
     
     override func viewDidLoad() {
@@ -56,13 +56,15 @@ class MemberDetailViewController: UIViewController {
         
         miniprofile.layer.borderWidth = 8
         miniprofile.layer.borderColor = UIColor.black.cgColor
+        
         //프로필 박스
         firstBox.layer.cornerRadius = firstBox.frame.height / 2
         secondBox.layer.cornerRadius = 20
         lastBox.layer.cornerRadius = lastBox.frame.height / 2
+        
         //블로그 박스
-        blogBox.layer.cornerRadius = blogBox.frame.height / 2
-        gitBox.layer.cornerRadius = gitBox.frame.height / 2
+        blogIcon.layer.cornerRadius = blogIcon.frame.height / 2
+        githubIcon.layer.cornerRadius = githubIcon.frame.height / 2
     }
     
 }
