@@ -10,13 +10,15 @@ import WebKit
 
 class WebPageViewController: UIViewController {
     
-    let url: String = "https://github.com/emilyj4482"
+    var url: String?
 
     @IBOutlet var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadWebView(to: url)
+        if let url = url {
+            loadWebView(to: url)
+        }
     }
     
     private func loadWebView(to url: String) {

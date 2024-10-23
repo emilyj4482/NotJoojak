@@ -58,6 +58,8 @@ class MemberDetailViewController: UIViewController {
                 blogIcon.setImage(UIImage(named: "icon_velog"), for: .normal)
             }
             
+            githubIcon.setImage(UIImage(named: "icon_github"), for: .normal)
+            
         } else {
             print("No data received")
         }
@@ -78,4 +80,23 @@ class MemberDetailViewController: UIViewController {
         githubIcon.layer.cornerRadius = githubIcon.frame.height / 2
         
     }
+
+    @IBAction func githubButtonTapped(_ sender: UIButton) {
+        presentWebView(sender, true)
+    }
+    
+    @IBAction func blogButtonTapped(_ sender: UIButton) {
+        presentWebView(sender, false)
+    }
+    
+    private func presentWebView(_ sender: UIButton, _ isGithub: Bool) {
+        guard
+            let member = member,
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WebPageViewController") as? WebPageViewController
+        else { return }
+        
+        vc.url = isGithub ? member.githubURL : member.blogURL
+        present(vc, animated: true)
+    }
+
 }
