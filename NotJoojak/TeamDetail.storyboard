@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="다운로드" translatesAutoresizingMaskIntoConstraints="NO" id="L2I-ry-5vP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L2I-ry-5vP">
                                 <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qt9-cW-fTx">
                                 <rect key="frame" x="146" y="198" width="232" height="100"/>
@@ -39,18 +38,24 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="뉴진스러운 불사조" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-UD-Pes">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="뉴진스러운 불사조" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-UD-Pes">
                                 <rect key="frame" x="55" y="79" width="292" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lDB-LA-4FG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="3" height="-1"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="artworks-n8i8jswrhn7cnsma-c96gia-t500x500_2_480" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ahm-xC-yrk">
-                                <rect key="frame" x="-72" y="147" width="320" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ahm-xC-yrk">
+                                <rect key="frame" x="0.0" y="142" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="BtH-3k-8Ge"/>
+                                    <constraint firstAttribute="width" secondItem="Ahm-xC-yrk" secondAttribute="height" multiplier="1:1" id="uvC-fr-4bN"/>
+                                    <constraint firstAttribute="height" constant="175" id="zrc-pO-AhX"/>
+                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="780d335e61c0019eae1299d856b926d5_480" translatesAutoresizingMaskIntoConstraints="NO" id="2F4-IT-wHU">
                                 <rect key="frame" x="317" y="155" width="69" height="56"/>
@@ -155,7 +160,24 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <constraints>
+                            <constraint firstAttribute="top" secondItem="L2I-ry-5vP" secondAttribute="top" id="2NL-ny-H6W"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qJf-UD-Pes" secondAttribute="trailing" constant="55" id="6dn-eK-w1d"/>
+                            <constraint firstItem="L2I-ry-5vP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="GS4-Wy-2Ua"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="leading" secondItem="Ahm-xC-yrk" secondAttribute="leading" id="Gax-KA-utU"/>
+                            <constraint firstItem="qJf-UD-Pes" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="55" id="VzR-ko-yKd"/>
+                            <constraint firstItem="qJf-UD-Pes" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="aNP-h6-wLw"/>
+                            <constraint firstItem="Ahm-xC-yrk" firstAttribute="top" secondItem="qJf-UD-Pes" secondAttribute="bottom" constant="5" id="hGj-Rm-wW9"/>
+                            <constraint firstItem="qJf-UD-Pes" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="lT8-Mo-NMb"/>
+                            <constraint firstItem="L2I-ry-5vP" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="oKG-o9-tGK"/>
+                            <constraint firstItem="L2I-ry-5vP" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="t20-XE-RuH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="L2I-ry-5vP" secondAttribute="trailing" id="wpJ-s0-BVz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="L2I-ry-5vP" id="3jH-Av-QCg"/>
+                        <outlet property="minjiImageView" destination="Ahm-xC-yrk" id="tbJ-UV-lVl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,9 +186,7 @@
     </scenes>
     <resources>
         <image name="780d335e61c0019eae1299d856b926d5_480" width="480" height="480"/>
-        <image name="artworks-n8i8jswrhn7cnsma-c96gia-t500x500_2_480" width="480" height="480"/>
         <image name="images_360" width="251" height="201"/>
         <image name="yl3mack9abc1abrmrhm6iyo5tjpbqmrsvyjd6orx9cdwphkm6hhjzadcs6tshgu1hlpnplmqy-ma0n8fter1ba_720" width="720" height="405"/>
-        <image name="다운로드" width="463" height="832"/>
     </resources>
 </document>
