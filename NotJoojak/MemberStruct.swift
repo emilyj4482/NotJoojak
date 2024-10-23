@@ -40,5 +40,7 @@ struct Member {
     let myStrength: String // 장점
     let blogURL: String // 블로그 주소
     let githubURL: String // 깃허브 주소
+    let favoriteFood: String // 좋아하는 음식
+    let tmi: String // TMI
 }
 
