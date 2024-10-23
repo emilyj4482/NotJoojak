@@ -71,6 +71,7 @@ class MemberDetailViewController: UIViewController {
         
         //블로그 박스
         blogIcon.layer.cornerRadius = blogIcon.frame.height / 2
+        blogIcon.clipsToBounds = true
         githubIcon.layer.cornerRadius = githubIcon.frame.height / 2
         
     }
