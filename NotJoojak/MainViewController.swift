@@ -44,10 +44,19 @@ class MainViewController: UIViewController {
                           workingStyle: "해보고 안되면 물어보자", devExperience: "비전공자", myStrength: "빠꾸없음",
                           blogURL: "https://alstjd0428.tistory.com/", githubURL: "https://github.com/kangminseoung",
                           favoriteFood: "고기면 됩니다. 편식없음", tmi: "내일 아침에 운동가야지~")
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if #available(iOS 16.0, *) {
+        navigationController?.navigationBar.standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        } else {
+            navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        }
+        
+        //바 틴트 바꾸는 것
+        self.navigationController?.navigationBar.barTintColor = UIColor.darkGray
     }
 
     
@@ -85,6 +94,6 @@ class MainViewController: UIViewController {
         }
         
     }
-    
+
 }
 
