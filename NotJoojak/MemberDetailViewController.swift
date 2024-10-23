@@ -2,7 +2,7 @@
 //  MemberDetailViewController.swift
 //  NotJoojak
 //
-//  Created by EMILY on 22/10/2024.
+//  Created by songyeom on 22/10/2024.
 //
 
 import UIKit
