@@ -21,6 +21,5 @@ class MainViewController: UIViewController {
         //바 틴트 바꾸는 것
         self.navigationController?.navigationBar.barTintColor = UIColor.darkGray
     }
-
 }
 
