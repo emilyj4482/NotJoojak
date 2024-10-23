@@ -250,7 +250,7 @@
                                 <imageReference key="image" image="person.fill" catalog="system" symbolScale="medium"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="CGN-Fm-GNl">
-                                <rect key="frame" x="281" y="315" width="86" height="36"/>
+                                <rect key="frame" x="280" y="315" width="87" height="36"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="30" verticalHuggingPriority="30" horizontalCompressionResistancePriority="30" verticalCompressionResistancePriority="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F95-0R-Yrb">
                                         <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
@@ -258,23 +258,23 @@
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="L73-KW-v8A"/>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="36" id="PGM-12-WAz"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="36" id="Zit-Ck-0o8"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="G" image="icon_GitHub"/>
+                                        <state key="normal" title="G" image="icon_github"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fU-TQ-I3e">
-                                        <rect key="frame" x="51" y="0.0" width="35" height="36"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="B"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fU-TQ-I3e">
+                                        <rect key="frame" x="51" y="0.0" width="36" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="H9q-ji-3YF"/>
+                                            <constraint firstAttribute="height" constant="36" id="Lax-pW-sty"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="B"/>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="F95-0R-Yrb" firstAttribute="centerY" secondItem="CGN-Fm-GNl" secondAttribute="centerY" id="maF-SL-fTd"/>
-                                    <constraint firstItem="F95-0R-Yrb" firstAttribute="centerX" secondItem="CGN-Fm-GNl" secondAttribute="centerX" id="uvq-3Z-3Ul"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -315,6 +315,7 @@
                         <outlet property="myStrength" destination="f11-7h-8Md" id="HHZ-Xa-Dap"/>
                         <outlet property="name" destination="rFs-0i-skk" id="UdI-dF-HLI"/>
                         <outlet property="secondBox" destination="bZe-lX-MXd" id="rnQ-Zx-d4K"/>
+                        <outlet property="tmi" destination="ink-iZ-11H" id="cB0-Ll-crY"/>
                         <outlet property="workingStyle" destination="Zoe-Ys-VfU" id="o9l-9S-n8B"/>
                     </connections>
                 </viewController>
@@ -343,7 +344,7 @@
     </scenes>
     <resources>
         <image name="flame" catalog="system" width="106" height="128"/>
-        <image name="icon_GitHub" width="230" height="225"/>
+        <image name="icon_github" width="230" height="225"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="backgroundColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

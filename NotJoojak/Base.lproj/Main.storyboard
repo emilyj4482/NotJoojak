@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="1049.2537313432836" y="-27.459954233409608"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main-->
         <scene sceneID="31f-bs-otA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TOb-RV-Nef" sceneMemberID="viewController">
+                <navigationController title="Main" automaticallyAdjustsScrollViewInsets="NO" id="TOb-RV-Nef" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w9Q-5a-OWu">
                         <rect key="frame" x="0.0" y="62" width="402" height="44"/>
@@ -104,7 +104,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vs0-GP-dVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129.85074626865671" y="-27.459954233409608"/>
+            <point key="canvasLocation" x="124" y="-27"/>
         </scene>
     </scenes>
     <resources>

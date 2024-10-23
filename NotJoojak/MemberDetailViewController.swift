@@ -24,6 +24,7 @@ class MemberDetailViewController: UIViewController {
     @IBOutlet weak var blogURL: UILabel!
     @IBOutlet weak var githubURL: UILabel!
     @IBOutlet weak var favoriteFood: UILabel!
+    @IBOutlet weak var tmi: UILabel!
 
     
     @IBOutlet weak var background: UIImageView!
@@ -33,7 +34,6 @@ class MemberDetailViewController: UIViewController {
     @IBOutlet weak var lastBox: UIView!
     @IBOutlet weak var blogIcon: UIButton!
     @IBOutlet weak var githubIcon: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,14 @@ class MemberDetailViewController: UIViewController {
             interests.text = member.interests
             workingStyle.text = member.workingStyle
             myStrength.text = member.myStrength
-            favoriteFood.text = "아직 안넣음"
+            favoriteFood.text = member.favoriteFood
+            tmi.text = member.tmi
+            
+            if member.blogURL.contains("tistory") {
+                blogIcon.setImage(UIImage(named: "icon_tistory"), for: .normal)
+            } else if member.blogURL.contains("velog") {
+                blogIcon.setImage(UIImage(named: "icon_velog"), for: .normal)
+            }
             
         } else {
             print("No data received")
@@ -65,6 +72,7 @@ class MemberDetailViewController: UIViewController {
         //블로그 박스
         blogIcon.layer.cornerRadius = blogIcon.frame.height / 2
         githubIcon.layer.cornerRadius = githubIcon.frame.height / 2
+        
     }
-    
+
 }
