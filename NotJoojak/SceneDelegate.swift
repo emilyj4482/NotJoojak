@@ -11,7 +11,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -21,7 +20,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
 
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
-            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+            animateFadeOutAndSwitchToMain()
+        }
+        
+        func animateFadeOutAndSwitchToMain() {
+            guard let window = window else { return }
+            UIView.animate(withDuration: 1.0, animations: {
+                window.alpha = 0
+            }) { _ in
+                let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                if let mainVC = mainStoryboard.instantiateInitialViewController() {
+                    window.rootViewController = mainVC
+                    window.makeKeyAndVisible()
+                    UIView.animate(withDuration: 1.0, animations: {
+                        window.alpha = 1
+                    })
+                }
+            }
         }
         
         // guard let _ = (scene as? UIWindowScene) else { return }
@@ -54,7 +69,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
 
 }
 
