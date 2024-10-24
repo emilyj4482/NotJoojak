@@ -45,9 +45,6 @@ class TalkViewController: UIViewController {
     var count : Int = 0
     var nameIndex : Int = 0
     
-    
-    let firstSegue : String = "firstSegue"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -146,31 +143,10 @@ class TalkViewController: UIViewController {
         let MemberDetailStoryBoard = UIStoryboard(name: "Main", bundle: nil)
         
         if let nextVC = MemberDetailStoryBoard.instantiateViewController(withIdentifier: "MemberDetailViewController") as? MemberDetailViewController {
-            
             nextVC.member = memberToSend
-            
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
     }
-    
-   /*
-    @IBAction func tappedLabel(_ sender: UITapGestureRecognizer) {
-        performSegue(withIdentifier: "teamIntroduceSegue", sender: nil)
-    }
-    */
-    
-   
-//    // 프로필 화면 전환
-//    @IBAction func tappedImageView(_ sender: UITapGestureRecognizer) {
-//        print(#function, sender.view?.tag)
-//        performSegue(withIdentifier: firstSegue, sender: nil)
-//    }
-//
-//   // 팀소개 화면 전환
-//    @IBAction func tappedLabel(_ sender: UITapGestureRecognizer) {
-//        print("chattingbox press")
-//        performSegue(withIdentifier: "teamIntroduceSegue", sender: nil)
-//    }
-//
+
 }
 
