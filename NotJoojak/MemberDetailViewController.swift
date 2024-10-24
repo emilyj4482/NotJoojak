@@ -57,7 +57,7 @@ class MemberDetailViewController: UIViewController {
             } else if member.blogURL.contains("velog") {
                 blogIcon.setImage(UIImage(named: "icon_velog"), for: .normal)
             }
-            githubIcon.setImage(UIImage(named: "icon_github"), for: .normal)
+            githubIcon.setImage(UIImage(named: "icon_GitHub"), for: .normal)
         } else {
             print("No data received")
         }
