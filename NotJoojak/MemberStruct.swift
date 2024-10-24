@@ -70,7 +70,7 @@ struct Member {
     
     static let JaeHoon = Member(profilePicture: "profile_JaeHoon", backgroundPicture: "background_JaeHoon",
                          name: "이재훈", age: 28, MBTI: .ISFP, hobby: "클라이밍", interests: "영어, 전자기기",
-                         workingStyle: "일하는 스타일", devExperience: "준전공자 (독학 5개월)", myStrength: "작심삼일을 계속계속",
+                         workingStyle: "팀원들과 소통을 최우선으로 으쌰으쌰", devExperience: "준전공자 (독학 5개월)", myStrength: "작심삼일을 계속계속",
                          blogURL: "https://velog.io/@jeffapd_/posts", githubURL: "https://github.com/jeff-0324",
                          favoriteFood: "피자, 고기라면 뭐든", tmi: "벽만 보면 잡고싶은 클라이머", location: "전주")
     
