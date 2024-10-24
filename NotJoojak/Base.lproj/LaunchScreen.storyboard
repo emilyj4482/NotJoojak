@@ -17,18 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="RkL-iZ-85E">
-                                <rect key="frame" x="0.0" y="62" width="402" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="RkL-iZ-85E" secondAttribute="top" id="8gf-P4-VTy"/>
-                            <constraint firstItem="RkL-iZ-85E" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HHz-dX-quO"/>
+                            <constraint firstItem="RkL-iZ-85E" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="5xY-n6-9TS"/>
                             <constraint firstItem="RkL-iZ-85E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a8T-Yq-ibj"/>
-                            <constraint firstItem="RkL-iZ-85E" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kxG-AQ-U0k"/>
-                            <constraint firstItem="RkL-iZ-85E" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="nJU-Nc-vcJ"/>
+                            <constraint firstItem="RkL-iZ-85E" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fpE-yj-DYE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RkL-iZ-85E" secondAttribute="trailing" id="xfW-UJ-QX1"/>
                         </constraints>
                     </view>
