@@ -54,19 +54,16 @@ class MainViewController: UIViewController {
         default: memberToSend = nil
         }
         
-        print(memberToSend?.name as Any)
-        
         let MemberDetailStoryBoard = UIStoryboard(name: "Main", bundle: nil)
         
         if let nextVC = MemberDetailStoryBoard.instantiateViewController(withIdentifier: "MemberDetailViewController") as? MemberDetailViewController {
-            
+
             nextVC.member = memberToSend
             
             self.navigationController?.pushViewController(nextVC, animated: true)
-        
         }
         
     }
-
+    
 }
 

@@ -57,15 +57,12 @@ class MemberDetailViewController: UIViewController {
             } else if member.blogURL.contains("velog") {
                 blogIcon.setImage(UIImage(named: "icon_velog"), for: .normal)
             }
-            
             githubIcon.setImage(UIImage(named: "icon_github"), for: .normal)
-            
         } else {
             print("No data received")
         }
         //미니프로필 사진
         profilePicture.layer.cornerRadius = profilePicture.frame.height / 2
-        
         profilePicture.layer.borderWidth = 8
         profilePicture.layer.borderColor = UIColor.black.cgColor
         

@@ -40,10 +40,10 @@ class TalkViewController: UIViewController {
     @IBOutlet weak var thirdAsk: UIView!
     @IBOutlet weak var chattingBox: UIView!
     
-    var viewOrder : [UIView] = []
-    let index : Int = 0
-    var count : Int = 0
-    var nameIndex : Int = 0
+    var viewOrder: [UIView] = []
+    let index: Int = 0
+    var count: Int = 0
+    var nameIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
