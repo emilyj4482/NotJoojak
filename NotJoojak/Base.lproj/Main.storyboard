@@ -105,7 +105,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="joojaktalk"/>
+                                    <backgroundConfiguration key="background" image="launchScreen"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -1705,7 +1705,7 @@
         <image name="chevron.forward" catalog="system" width="97" height="128"/>
         <image name="flame" catalog="system" width="106" height="128"/>
         <image name="icon_github" width="230" height="225"/>
-        <image name="joojaktalk" width="1170" height="2530"/>
+        <image name="launchScreen" width="402" height="874"/>
         <image name="og_catalog" width="1600" height="800"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
