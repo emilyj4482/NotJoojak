@@ -16,20 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joojaktalk" translatesAutoresizingMaskIntoConstraints="NO" id="RkL-iZ-85E">
-                                <rect key="frame" x="0.0" y="62" width="402" height="778"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="RkL-iZ-85E">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RkL-iZ-85E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="50S-3s-IkQ"/>
-                            <constraint firstItem="RkL-iZ-85E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BCE-kF-zYu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RkL-iZ-85E" secondAttribute="trailing" id="Bge-1f-JE9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RkL-iZ-85E" secondAttribute="bottom" id="Daz-52-j9B"/>
-                            <constraint firstItem="RkL-iZ-85E" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kxG-AQ-U0k"/>
-                            <constraint firstItem="RkL-iZ-85E" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="nJU-Nc-vcJ"/>
+                            <constraint firstItem="RkL-iZ-85E" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="5xY-n6-9TS"/>
+                            <constraint firstItem="RkL-iZ-85E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a8T-Yq-ibj"/>
+                            <constraint firstItem="RkL-iZ-85E" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fpE-yj-DYE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RkL-iZ-85E" secondAttribute="trailing" id="xfW-UJ-QX1"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,7 +37,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="joojaktalk" width="1170" height="2530"/>
+        <image name="launchScreen" width="402" height="874"/>
         <namedColor name="backgroundColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
